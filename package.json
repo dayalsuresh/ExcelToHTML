@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@angular/cli": "^16.2.10",
+    "@angular/core": "^16.2.12",
+    "@types/xlsx": "^0.0.36"
+  }
+}

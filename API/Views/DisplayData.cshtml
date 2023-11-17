@@ -1,0 +1,30 @@
+@model List<EmployeeViewModel>
+
+<h2>Data from Excel File</h2>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>GPN</th>
+                <!-- Add other headers as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in Model)
+            {
+                <tr>
+                    <td>@employee.Email</td>
+                    <td>@employee.GPN</td>
+                    <!-- Add other cells as needed -->
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No valid data found in the Excel file.</p>
+}
